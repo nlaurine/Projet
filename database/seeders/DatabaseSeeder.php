@@ -13,6 +13,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $this->call([
+            UsersTableSeeder::class,
+            Categorie_gameTableSeeder::class,
+            CategoriesTableSeeder::class,
+            GameTableSeeder::class,
+            StudiosTableSeeder::class,
+            GamePlatformSeeder::class,
+            PlatformsSeeder::class,
+            RatingsSeeder::class,
+            
+            
+        ]);
     }
 }
