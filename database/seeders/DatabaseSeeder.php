@@ -22,8 +22,6 @@ class DatabaseSeeder extends Seeder
             GamePlatformSeeder::class,
             PlatformsSeeder::class,
             RatingsSeeder::class,
-            
-            
         ]);
     }
 }
