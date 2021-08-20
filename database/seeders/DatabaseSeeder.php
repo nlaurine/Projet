@@ -18,7 +18,11 @@ class DatabaseSeeder extends Seeder
             Categorie_gameTableSeeder::class,
             CategoriesTableSeeder::class,
             GameTableSeeder::class,
-            StudiosTableSeeder::class
+            StudiosTableSeeder::class,
+            GamePlatformSeeder::class,
+            PlatformsSeeder::class,
+            RatingsSeeder::class,
+            
             
         ]);
     }
