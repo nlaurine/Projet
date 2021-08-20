@@ -16,7 +16,7 @@ class CreateGamePlatformTable extends Migration
         Schema::create('ratings', function (Blueprint $table) {
                 $table->id();
                 $table->unsignedBigInteger('game_id');
-                $table->foreign('game_id')->on('game_platform')->references('id');
+                $table->foreign('game_id')->on('game')->references('id');
         });
     }
 

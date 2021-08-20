@@ -18,4 +18,9 @@ class Game extends Model
     
         return $this->belongsTo(Studios::class);
     }
+    
+    public function game_Plateform(){
+    
+        return $this->hasMany(Game_Plateform::class);
+    }
 }
