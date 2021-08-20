@@ -2,17 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Ratings;
+use App\Models\Game;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class RatingsFactory extends Factory
+class GameFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Ratings::class;
+    protected $model = Game::class;
 
     /**
      * Define the model's default state.
@@ -21,11 +21,8 @@ class RatingsFactory extends Factory
      */
     public function definition()
     {
-        // return [
-        //     'mark' => $this->faker->numberBetween(0,5),
-        //     'content' => $this->faker->paragraph(3),
-        //     'user_id' => 1,
-        //     'game_id' => 1
-        // ];
+        return [
+            //
+        ];
     }
 }

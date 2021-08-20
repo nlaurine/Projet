@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class StudiosTableSeeder extends Seeder
 {
@@ -13,6 +14,12 @@ class StudiosTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        DB::table('studios')->insert([
+            [
+                'name' => 'Game Freak',
+                'id' => 1,
+                'logo' => "https://www.interactive.org/images/games_developers/2014-Game-Freak.jpg",
+            ]    
+        ]);
     }
 }
