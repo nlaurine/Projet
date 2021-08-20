@@ -19,6 +19,7 @@ class CreateGamesTable extends Migration
             $table->float('mark');
             $table->string('image');
             $table->text('description');
+            $table->unsignedBigInteger('studio_id');
             $table->foreign('studio_id')->on('studios')->references('id');
             $table->float('price');
             $table->date('release_date');
