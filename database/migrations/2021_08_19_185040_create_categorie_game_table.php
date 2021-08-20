@@ -14,7 +14,7 @@ class CreateCategorieGameTable extends Migration
     public function up()
     {
         Schema::create('categorie_game', function (Blueprint $table) {
-            $table->foreign('game_id')->on('game')->references('id');
+            $table->foreign('game_id')->on('games')->references('id');
             $table->foreign('category_id')->on('categories')->references('id');
         });
     }
