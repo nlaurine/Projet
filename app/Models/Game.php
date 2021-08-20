@@ -23,4 +23,9 @@ class Game extends Model
     
         return $this->hasMany(Game_Plateform::class);
     }
+    
+    public function ratings(){
+    
+    return $this->hasMany(Ratings::class);
+    }
 }
