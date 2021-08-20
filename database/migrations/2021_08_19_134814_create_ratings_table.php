@@ -18,7 +18,9 @@ class CreateRatingsTable extends Migration
             $table->float('mark');
             $table->text('content');
             $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('game_id');
             $table->foreign('user_id')->on('users')->references('id');
+            $table->foreign('game_id')->on('games')->references('id');
             $table->timestamps();
         });
     }
