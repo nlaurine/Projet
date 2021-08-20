@@ -25,5 +25,53 @@ class GameTableSeeder extends Seeder
                 'release_date' => '10/10/10'
             ]    
         ]);
+        
+        DB::table('games')->insert([
+            [
+                'title' => 'Call of Duty',
+                'mark' => 2,
+                'image' => "https://www.hd-tecnologia.com/imagenes/articulos/2021/04/El-fin-de-Call-of-Duty-Warzone-sera-este-21-de-abril-segun-Activision.jpg",
+                'description' => 'Un jeu de guerre apparement',
+                'studio_id' => 1,
+                'price' => 100,
+                'release_date' => '03/10/29'
+            ]    
+        ]);
+        
+        DB::table('games')->insert([
+            [
+                'title' => 'Sonic',
+                'mark' => 5,
+                'image' => "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sonic-the-hedgehog.jpg",
+                'description' => 'Sonic se bat contre le méchant Docteur Ivo Robotnik (Eggman) un vilain scientifique qui veut capturer les petits animaux pour ses expériences machiavéliques. Dans les jeux de Sonic gratuits vous pourrez parcourir des mondes immenses à toute vitesse et découvrir des personnages attachants comme son compagnon Tails ou le puissant Knuckles.',
+                'studio_id' => 3,
+                'price' => 100,
+                'release_date' => '91/01/01'
+            ]    
+        ]);
+        
+        DB::table('games')->insert([
+            [
+                'title' => 'The Legend of Zelda',
+                'mark' => 3,
+                'image' => "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sonic-the-hedgehog.jpg",
+                'description' => 'The Legend of Zelda, ou simplement Zelda, est une série de jeux vidéo d\'action-aventure.',
+                'studio_id' => 4,
+                'price' => 100,
+                'release_date' => '86/01/01'
+            ]    
+        ]);
+        
+        DB::table('games')->insert([
+            [
+                'title' => 'Ready 2 Rumble Boxing',
+                'mark' => 4.5,
+                'image' => "https://image.jeuxvideo.com/images/ps/r/d/rd2rps0f.jpg",
+                'description' => 'Ready 2 Rumble Boxing sur Dreamcast est un jeu de boxe où priment le fun et la bonne ambiance.',
+                'studio_id' => 5,
+                'price' => 100,
+                'release_date' => '99/10/14'
+            ]    
+        ]);
     }
 }
