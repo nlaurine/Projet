@@ -24,19 +24,19 @@
                         </li>
                         @auth
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Déconnexion</a>
+                                <a class="nav-link" href="{{ route('users.logout') }}">Déconnexion</a>
                             </li>
                         @else
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Inscription</a>
+                                <a class="nav-link" href="{{ route('users.create') }}">Inscription</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Connexion</a>
+                                <a class="nav-link" href="{{ route('users.login') }}">Connexion</a>
                             </li>
                         @endauth
                     </ul>
                     @auth
-                        <span class="navbar-text">Bienvenue {{ auth()->user()->name }} !</span>
+                        <span class="navbar-text">Bienvenue {{ auth()->user()->username }} !</span>
                     @endauth
                 </div>
             </div>
