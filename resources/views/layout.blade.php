@@ -25,15 +25,7 @@
                         
                         @auth
                             <li class="nav-item">
-<<<<<<< HEAD
                                 <a class="nav-link" href="{{ route('users.logout') }}">Déconnexion</a>
-=======
-                                <a class="nav-link" href="#">Créer un jeu vidéo</a>
-                            </li>
-                            
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Déconnexion</a>
->>>>>>> 1dc4989cfa76446b432afc519022baa3bade740e
                             </li>
                         @else
                             <li class="nav-item">

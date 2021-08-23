@@ -24,8 +24,6 @@ class RatingsFactory extends Factory
         // return [
         //     'mark' => $this->faker->numberBetween(0,5),
         //     'content' => $this->faker->paragraph(3),
-        //     'user_id' => 1,
-        //     'game_id' => 1
         // ];
     }
 }

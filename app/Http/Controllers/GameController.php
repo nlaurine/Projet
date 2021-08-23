@@ -19,7 +19,7 @@ class GameController extends Controller
         //     ->join('studios', 'games.studio_id', '=', 'studios.id')
         //     ->get();
             
-        $games = Game::with('studio')->paginate(2); 
+        $games = Game::with('studio')->paginate(3); 
         
         return view('games.index',[
                 'games' => $games]); 

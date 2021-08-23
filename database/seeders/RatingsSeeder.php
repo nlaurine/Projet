@@ -14,6 +14,9 @@ class RatingsSeeder extends Seeder
     public function run()
     {
         
-        // \App\Models\Ratings::factory(10)->create();
+        // \App\Models\Ratings::factory(20)
+        // ->for(\App\Models\Game::factory()->create())
+        // ->for(\App\Models\User::factory()->create())
+        // ->create();
     }
 }
