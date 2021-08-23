@@ -20,9 +20,14 @@
                             <a class="nav-link active" aria-current="page" href="{{ route('homepage') }}">Accueil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Liste des jeux</a>
+                            <a class="nav-link" href="{{ route('games.index') }}">Liste des jeux vidéos</a>
                         </li>
+                        
                         @auth
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Créer un jeu vidéo</a>
+                            </li>
+                            
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Déconnexion</a>
                             </li>

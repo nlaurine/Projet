@@ -4,7 +4,7 @@
 
 @section('content')
 
-    <h1>Accueil du site</h1>
+    <h1>Accueil du site, les derniers jeux</h1>
     
 @foreach($latestGames as $latestGame)
     <article class="my-3">

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GameController;
+use App\Http\Controllers\StudiosController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PostController;
 
@@ -16,4 +18,8 @@ use App\Http\Controllers\PostController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('homepage');
-Route::get('/games/{id}', [PostController::class, 'show'])->name('games.show');
+
+Route::get('/games/{id}', [GameController::class, 'show'])->name('games.show');
+
+Route::get('/games', [GameController::class, 'index'])->name('games.index');
+
