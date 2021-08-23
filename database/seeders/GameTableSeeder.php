@@ -32,7 +32,7 @@ class GameTableSeeder extends Seeder
                 'mark' => 2,
                 'image' => "https://www.hd-tecnologia.com/imagenes/articulos/2021/04/El-fin-de-Call-of-Duty-Warzone-sera-este-21-de-abril-segun-Activision.jpg",
                 'description' => 'Call of Duty est un jeu vidéo de tir à la première personne se déroulant pendant la Seconde Guerre mondiale. Développé par le studio Infinity Ward et édité par Activision, il est commercialisé sur Windows et Mac OS X en 2003. Il est le premier jeu de la série Call of Duty.',
-                'studio_id' => 1,
+                'studio_id' => 2,
                 'price' => 100,
                 'release_date' => '03/10/29'
             ]    
