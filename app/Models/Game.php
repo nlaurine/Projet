@@ -28,4 +28,5 @@ class Game extends Model
     
     return $this->hasMany(Ratings::class);
     }
+    
 }
