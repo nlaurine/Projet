@@ -17,8 +17,5 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/', [HomeController::class, 'index'])->name('homepage');
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::get('/games', [GameController::class, 'index'])->name('games.index');
