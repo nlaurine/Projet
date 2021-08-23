@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\GameController;
 use App\Http\Controllers\StudiosController;
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,7 @@ use App\Http\Controllers\StudiosController;
 |
 */
 
+Route::get('/', [HomeController::class, 'index'])->name('homepage');
 Route::get('/', function () {
     return view('welcome');
 });

@@ -19,10 +19,10 @@ class GameTableSeeder extends Seeder
                 'title' => 'Pokemon',
                 'mark' => 4,
                 'image' => "https://www.pokepedia.fr/images/b/b6/Pok%C3%A9mon_Jaune_Recto.png",
-                'description' => 'Super jeu',
+                'description' => 'Pokémon version jaune : édition spéciale Pikachu, couramment appelé Pokémon Jaune est un jeu vidéo de rôle japonais de la licence Pokémon développé par Game Freak sous la direction de Satoshi Tajiri.',
                 'studio_id' => 1,
                 'price' => 100,
-                'release_date' => '10/10/10'
+                'release_date' => '98/09/12'
             ]    
         ]);
         
@@ -31,7 +31,7 @@ class GameTableSeeder extends Seeder
                 'title' => 'Call of Duty',
                 'mark' => 2,
                 'image' => "https://www.hd-tecnologia.com/imagenes/articulos/2021/04/El-fin-de-Call-of-Duty-Warzone-sera-este-21-de-abril-segun-Activision.jpg",
-                'description' => 'Un jeu de guerre apparement',
+                'description' => 'Call of Duty est un jeu vidéo de tir à la première personne se déroulant pendant la Seconde Guerre mondiale. Développé par le studio Infinity Ward et édité par Activision, il est commercialisé sur Windows et Mac OS X en 2003. Il est le premier jeu de la série Call of Duty.',
                 'studio_id' => 1,
                 'price' => 100,
                 'release_date' => '03/10/29'
@@ -54,7 +54,7 @@ class GameTableSeeder extends Seeder
             [
                 'title' => 'The Legend of Zelda',
                 'mark' => 3,
-                'image' => "https://jeuxvideo.rds.ca/wp-content/uploads/sites/2/2020/03/sonic-the-hedgehog.jpg",
+                'image' => "https://cdn03.nintendo-europe.com/media/images/10_share_images/portals_3/SI_Hub_Zelda_Portal_image1600w.jpg",
                 'description' => 'The Legend of Zelda, ou simplement Zelda, est une série de jeux vidéo d\'action-aventure.',
                 'studio_id' => 4,
                 'price' => 100,
