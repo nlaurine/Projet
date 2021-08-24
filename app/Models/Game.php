@@ -9,9 +9,9 @@ class Game extends Model
 {
     use HasFactory;
     
-    public function categorie_game(){
-        
-        return $this->hasMany(Categorie_game::class);
+    public function categories()
+    {
+        return $this->belongsToMany(Categorie::class);
     }
     
     public function studio(){

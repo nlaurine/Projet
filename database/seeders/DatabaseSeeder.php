@@ -15,14 +15,12 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UsersTableSeeder::class,
-            Categorie_gameTableSeeder::class,
-            CategoriesTableSeeder::class,
             StudiosTableSeeder::class,
             GameTableSeeder::class,
+            CategoriesTableSeeder::class,
             GamePlatformSeeder::class,
             PlatformsSeeder::class,
             RatingsSeeder::class,
-
         ]);
     }
 }

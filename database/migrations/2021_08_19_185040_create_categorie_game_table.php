@@ -15,9 +15,9 @@ class CreateCategorieGameTable extends Migration
     {
         Schema::create('categorie_game', function (Blueprint $table) {
             $table->unsignedBigInteger('game_id');
-            $table->unsignedBigInteger('category_id');
+            $table->unsignedBigInteger('categorie_id');
             $table->foreign('game_id')->on('games')->references('id');
-            $table->foreign('category_id')->on('categories')->references('id');
+            $table->foreign('categorie_id')->on('categories')->references('id');
         });
     }
 

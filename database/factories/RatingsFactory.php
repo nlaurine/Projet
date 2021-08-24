@@ -21,9 +21,9 @@ class RatingsFactory extends Factory
      */
     public function definition()
     {
-        // return [
-        //     'mark' => $this->faker->numberBetween(0,5),
-        //     'content' => $this->faker->paragraph(3),
-        // ];
+        return [
+            'mark' => $this->faker->numberBetween(0,5),
+            'content' => $this->faker->paragraph(3),
+        ];
     }
 }
