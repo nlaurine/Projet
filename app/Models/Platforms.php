@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Platforms extends Model
 {
     use HasFactory;
+    
+    public function platforms()
+    {
+        return $this->belongsToMany(Platforms::class);
+    }
 }

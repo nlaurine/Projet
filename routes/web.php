@@ -31,9 +31,5 @@ Route::get('/users/login', [UserController::class, 'login'])->name('users.login'
 Route::post('/users/login', [UserController::class, 'signin'])->name('users.signin');
 Route::get('/users/logout', [UserController::class, 'logout'])->name('users.logout');
 Route::post('/games/{id}/ratings', [RatingController::class, 'store'])->name('games.ratings.store');
-
 Route::get('/games/{id}', [GameController::class, 'show'])->name('games.show');
-
 Route::get('/games', [GameController::class, 'index'])->name('games.index');
-
-
