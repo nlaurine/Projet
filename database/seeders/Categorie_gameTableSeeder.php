@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class Categorie_gameTableSeeder extends Seeder
 {
@@ -13,6 +14,7 @@ class Categorie_gameTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        \App\Models\Categorie_game::factory(10)->create();
+        
     }
 }

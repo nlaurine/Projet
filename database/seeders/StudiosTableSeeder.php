@@ -55,6 +55,29 @@ class StudiosTableSeeder extends Seeder
             ]    
         ]);
         
+        DB::table('studios')->insert([
+            [
+                'name' => 'Mojang Studios',
+                'id' => 6,
+                'logo' => "https://img.generation-nt.com/mojang-logo_01667431.jpg",
+            ]    
+        ]);
+        
+        DB::table('studios')->insert([
+            [
+                'name' => 'Rockstar Games',
+                'id' => 7,
+                'logo' => "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Rockstar_Games_Logo.svg/langfr-280px-Rockstar_Games_Logo.svg.png",
+            ]    
+        ]);
+        
+        DB::table('studios')->insert([
+            [
+                'name' => 'Electronic Arts',
+                'id' => 8,
+                'logo' => "https://media.contentapi.ea.com/content/dam/eacom/fr-ca/common/october-ea-ring.png",
+            ]    
+        ]);
         
         
     }
