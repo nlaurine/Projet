@@ -16,6 +16,8 @@ class AddForeignPlatform extends Migration
         Schema::table('game_platform', function (Blueprint $table) {
             $table->unsignedBigInteger('game_id');
             $table->foreign('game_id')->on('games')->references('id');
+            $table->unsignedBigInteger('platforms_id');
+            $table->foreign('platforms_id')->on('platforms')->references('id');
         });
     }
 
@@ -29,6 +31,8 @@ class AddForeignPlatform extends Migration
         Schema::table('game_platform', function (Blueprint $table) {
             $table->dropForeign('game_platform_game_id_foreign');
             $table->dropColumn('game_id');
+            $table->dropForeign('game_platform_platforms_id_foreign');
+            $table->dropColumn('platforms_id');
         });
     }
 }

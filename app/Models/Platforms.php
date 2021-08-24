@@ -9,8 +9,8 @@ class Platforms extends Model
 {
     use HasFactory;
     
-    public function platforms()
+    public function games()
     {
-        return $this->belongsToMany(Platforms::class);
+        return $this->belongsToMany(Game::class);
     }
 }

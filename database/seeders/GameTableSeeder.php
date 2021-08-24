@@ -114,7 +114,7 @@ class GameTableSeeder extends Seeder
             [
                 'title' => 'New Super Mario Bros',
                 'mark' => 5,
-                'image' => "https://m.media-amazon.com/images/I/91+e17CoAML._AC_SY500_.jpg",
+                'image' => "https://cdn03.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_ds_22/SI_NDS_NewSuperMarioBrosDS_image1600w.jpg",
                 'description' => 'New Super Mario Bros. est un jeu vidéo de plates-formes. Le scénario du jeu est similaire à celui des autres jeux de plates-formes de la série Super Mario. Mario doit sauver la princesse Peach en combattant les sbires de Bowser. Il a pour cela accès à différents power-ups, comme le Méga Champi, la Fleur de Feu ou l\'étoile d\'invincibilité, chacun d\'entre eux lui donnant des capacités différentes. Après avoir parcouru les huit mondes, pour un total de 80 niveaux, Mario doit vaincre Bowser Jr. puis Bowser pour finalement sauver Peach.',
                 'studio_id' => 4,
                 'price' => 100,
